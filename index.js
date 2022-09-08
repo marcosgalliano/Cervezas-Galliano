@@ -1,4 +1,4 @@
-/* 
+
 alert('Buenas! vamos a mostrarle nuestra gigantesca variedad de cervezas con un juego dianamico');
 
 
@@ -78,20 +78,38 @@ if (tarjetas == 1){
                 break;
             }
     }
-} */
-
-
-for (i=0; i < 1; i++){  
-
-let nombre = prompt("por favor ingrese su nombre para agregar a la lista");
-
-alert(`${nombre} usted tiene el turno nro 5 en la siguiente lista `);
-
-const lista = ["andres", "marcos", "lucia", "hernan", "pedro"];
-
-lista.push(nombre);
-
-alert(`${lista}`);
-
 }
+
+
+
+function CervezasEspeciales(nombre, precio, gusto){
+    this.nombre = nombre;
+    this.precio = precio;
+    this.gusto = gusto;
+}
+
+const cervezaEspecial1 = new CervezasEspeciales("Galliano Ipa", 700, "sabor miel");
+
+console.log(cervezaEspecial1);
+
+// CREA TU PROPIA CERVEZA
+
+alert(`vamos a guardar en nuestros datos 2 cervezas que crearia usted, sea libre de decidir lo que quiera!`)
+
+const CervezaPropia =[];
+
+for(let i = 0; i < 2; i++){
+    let nombre = prompt("ingrese el nombre de su cerveza");
+    let precio = prompt("ingrese el precio de su cerveza");
+    let gusto = prompt("elija el tipo de gusto que le pondria. EJ: Miel");
+    let obj = {
+        nombre,
+        precio,
+        gusto
+    }
+
+    CervezaPropia.push(obj);
+}
+
+console.log(CervezaPropia);
 
