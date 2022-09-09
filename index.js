@@ -113,3 +113,9 @@ for(let i = 0; i < 2; i++){
 
 console.log(CervezaPropia);
 
+// RECORRER LAS CERVEZAS CREADAS
+
+CervezaPropia.forEach(item => {
+    console.log(item);
+});
+
