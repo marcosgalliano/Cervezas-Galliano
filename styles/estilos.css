@@ -16,7 +16,7 @@
 .navbar ul {
   list-style: none;
   display: block;
-  background-color: black;
+  /* background-color: black; */
   width: 100%;
   padding-right: 27px;
 }
@@ -242,4 +242,87 @@
 
 .div4:hover {
   background-size: 105% 105%;
+}
+
+.bodyy {
+  display: grid;
+  grid-template-areas: "nav nav" "main main" "footer footer";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 74.4px 100% 100%;
+}
+
+.header_pages {
+  grid-area: nav;
+  background-color: #232323;
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/fondo-de-presentacion.jpg);
+}
+
+.navbar2 ul {
+  list-style: none;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+  height: 100%;
+}
+
+.navbar2 {
+  height: 100%;
+}
+
+.navbar2 nav {
+  height: 100%;
+}
+
+.navbar2 ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Righteous", cursive;
+  border-bottom: 1px solid white;
+  transition: 1s;
+}
+
+.navbar2 ul li a:hover {
+  color: rgb(255, 184, 97);
+  font-size: 17px;
+}
+
+.main_pages {
+  grid-area: main;
+  background-color: rgb(255, 184, 97);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "eleccion eleccion" "imagen descripcion";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 80%;
+}
+
+.elegir_local {
+  grid-area: eleccion;
+}
+
+.footer_pages {
+  grid-area: footer;
+  background-color: brown;
+  height: 100%;
+  width: 100%;
+}
+
+.rojo {
+  background-color: red;
+}
+
+.amarillo {
+  background-color: yellow;
+}
+
+.verde {
+  background-color: green;
 }/*# sourceMappingURL=estilos.css.map */

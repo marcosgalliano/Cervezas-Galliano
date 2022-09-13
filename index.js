@@ -1,4 +1,4 @@
-
+/* 
 alert('Buenas! vamos a mostrarle nuestra gigantesca variedad de cervezas con un juego dianamico');
 
 
@@ -90,11 +90,11 @@ function CervezasEspeciales(nombre, precio, gusto){
 
 const cervezaEspecial1 = new CervezasEspeciales("Galliano Ipa", 700, "sabor miel");
 
-console.log(cervezaEspecial1);
+console.log(cervezaEspecial1); */
 
 // CREA TU PROPIA CERVEZA
 
-alert(`vamos a guardar en nuestros datos 2 cervezas que crearia usted, sea libre de decidir lo que quiera!`)
+/* alert(`vamos a guardar en nuestros datos 2 cervezas que crearia usted, sea libre de decidir lo que quiera!`)
 
 const CervezaPropia =[];
 
@@ -109,13 +109,27 @@ for(let i = 0; i < 2; i++){
     }
 
     CervezaPropia.push(obj);
-}
+} */
 
-console.log(CervezaPropia);
+// console.log(CervezaPropia);
 
 // RECORRER LAS CERVEZAS CREADAS
 
-CervezaPropia.forEach(item => {
+/* CervezaPropia.forEach(item => {
     console.log(item);
-});
+}); */
+
+let aNavbar = document.getElementById("navbar_logo_redes");
+
+let color = prompt("ingrese el color que le gustaria para el color del navbar 1- Amarillo 2-Rojo 3-Verde");
+
+if (color === "1"){
+    aNavbar.className = "amarillo";
+}else if (color === "2"){
+    aNavbar.className = "rojo";
+}else if (color === "3"){
+    aNavbar.className = "verde";
+}else{
+    alert(`color predeterminado`)
+}
 
