@@ -94,32 +94,32 @@ console.log(cervezaEspecial1); */
 
 // CREA TU PROPIA CERVEZA
 
-/* alert(`vamos a guardar en nuestros datos 2 cervezas que crearia usted, sea libre de decidir lo que quiera!`)
+// alert(`vamos a guardar en nuestros datos 2 cervezas que crearia usted, sea libre de decidir lo que quiera!`)
 
-const CervezaPropia =[];
+// const CervezaPropia =[];
 
-for(let i = 0; i < 2; i++){
-    let nombre = prompt("ingrese el nombre de su cerveza");
-    let precio = prompt("ingrese el precio de su cerveza");
-    let gusto = prompt("elija el tipo de gusto que le pondria. EJ: Miel");
-    let obj = {
-        nombre,
-        precio,
-        gusto
-    }
+// for(let i = 0; i < 2; i++){
+//     let nombre = prompt("ingrese el nombre de su cerveza");
+//     let precio = prompt("ingrese el precio de su cerveza");
+//     let gusto = prompt("elija el tipo de gusto que le pondria. EJ: Miel");
+//     let obj = {
+//         nombre,
+//         precio,
+//         gusto
+//     }
 
-    CervezaPropia.push(obj);
-} */
+//     CervezaPropia.push(obj);
+// }
 
 // console.log(CervezaPropia);
 
 // RECORRER LAS CERVEZAS CREADAS
 
-/* CervezaPropia.forEach(item => {
-    console.log(item);
-}); */
+// CervezaPropia.forEach(item => {
+//     console.log(item);
+// });
 
-let aNavbar = document.getElementById("navbar_logo_redes");
+/* let aNavbar = document.getElementById("navbar_logo_redes");
 
 let color = prompt("ingrese el color que le gustaria para el color del navbar 1- Amarillo 2-Rojo 3-Verde");
 
@@ -132,4 +132,19 @@ if (color === "1"){
 }else{
     alert(`color predeterminado`)
 }
+ */
 
+let correo = document.getElementById("text");
+let formulario = document.getElementById("formulario");
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let inputs = e.target.children;
+    if(!inputs[0].value.includes("@")){
+      inputs[0].value = "";  
+      correo.className = "error";
+      let mensaje = document.createElement("h5");
+      mensaje.innerHTML = "correo invalido"
+      mensaje.className = "rojo";
+      document.body.append(mensaje);
+    }
+})
