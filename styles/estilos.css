@@ -337,19 +337,21 @@
   width: 100%;
 }
 
-.rojo {
-  background-color: red;
+.logo_reservas {
+  height: 250px;
+  width: 250px;
 }
 
-.amarillo {
-  background-color: yellow;
+body {
+  background-color: rgb(206, 166, 55);
+  text-align: center;
 }
 
-.verde {
-  background-color: green;
+form input {
+  margin: 12px;
 }
 
-.error {
-  color: red;
-  border: 1px solid red;
+.imgUsuario {
+  height: 70px;
+  width: 70px;
 }/*# sourceMappingURL=estilos.css.map */

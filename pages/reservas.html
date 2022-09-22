@@ -8,13 +8,58 @@
     <title>Reservas</title>
 </head>
 <body>
-    <h2>ingresar un correo en el primer casillero <br> y agregar cantidad de cervezas requeridas en el 2do casillero</h2>
-
-        <form id="formulario">
-            <input type="text" id="text"/>
-            <input type="number" />
-            <input type="submit" value="Enviar" />
-        </form>
-        <script src="../index.js"></script>
+    <main>
+        <div class="body_div">
+            <img src="../assets/logo.png" class="logo_reservas">
+        </div>
+        <!-- RESERVA CODE -->
+        <button id="boton">Crear Usuario</button>
+        <h3 id="h2"></h3>
+        <div id="cuentaDeUsuario"></div>
+         <section class="reserva">
+             <div class="reservaBstrap">
+             <form>
+                 <label for="nombre">
+                     Nombre
+                 </label>
+                 <input type="text" id="nombre" />
+                 <br class="reserva_br768">
+                     Apellido
+                 </label>
+                 <input type="text" id="apellido" />
+                 <h3> Elegir Local </h3>
+                 <select>
+                     <option selected="selected"> LOCAL </option>
+                     <option> Puerto de Frutos </option>
+                     <option> Euskal Herria Plaza</option>
+                 </select>
+                <h3>
+                    Cantidad de Personas
+                </h3>
+                <select>
+                    <option> 1 Personas </option>
+                    <option> 2 Personas </option>
+                    <option> 3 Personas </option>
+                    <option> 4 Personas </option>
+                    <option> +5 Personas </option>
+                </select>
+                <label for="Fecha"> Dia de la Reserva </label>
+                <br />
+                <input type="datetime-local" id="Fecha de reserva" name="Elegir fecha" value="17-05-22T00:00" min="17-05-22T10:00" max="01-01-23T23:59" >
+                <label> 
+                    Queres que te enviemos un recordatorio para la Reserva?
+                </label>
+                <br />
+                <span> SI </span>
+                 <input type="radio"  name="SINO" />
+                <span> NO </span>
+                 <input type="radio" name="SINO" />
+                <br />
+                 <input type="submit" />
+             </form>
+             </div>
+         </section>
+    </main>
+ <script src="../index.js"></script>
 </body>
 </html>
