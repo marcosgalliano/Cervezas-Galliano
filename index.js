@@ -150,51 +150,52 @@ if (color === "1"){
 // })
 
 
+let sectionLocales = document.getElementById("sectionLocales");
 
-let usuario;
-let usuarioInfo = localStorage.getItem("usuario");
-let h2 = document.getElementById("h2");
-let cuentaDeUsuario = document.getElementById("cuentaDeUsuario");
+let botonNordelta = document.getElementById("btnNordelta");
 
-if(usuarioInfo){
-    let mensaje = `Bienvenid@ ${usuarioInfo}`;
-    h2.innerHTML = `${mensaje}`
-}else{
-    usuario = prompt("ingrese su nombre para crear un usuario");
-    localStorage.setItem("usuario", usuario);
-}
+let btnSanIsidro = document.getElementById("btnSanIsidro");
 
+let btnVillaMayo = document.getElementById("btnVillaMayo");
 
-for(i = 0; i < 1; i++ ){ 
-let boton = document.getElementById("boton");
-boton.addEventListener("click", () => {
-    let nombreDeUsuario = prompt("ingresar un nombre de usario");
-    let domicilio = prompt("ingrese su domicilio");
-    let sexo = prompt("ingrese su sexo, Hombre o Mujer");
-    let edad = parseInt(prompt("ingrese su edad"));
-        cuentaDeUsuario.innerHTML = `
-                                 <img src="../assets/imagendehombre.png" alt="hombre" class="imgUsuario"> 
-                                 <h4> Nombre de usuario: ${nombreDeUsuario} </h4>
-                                 <h4> Domicilio: ${domicilio} 
-                                 <h4> Edad: ${edad} </h4>
-                                 <h4> sexo: ${sexo} </h4> 
-                                 `   
-    localStorage.setItem("nombreDeUsuario", nombreDeUsuario); 
-    localStorage.setItem("domicilio", domicilio);
-    localStorage.setItem("sexo", sexo);
-    localStorage.setItem("edad", edad);                            
+let btnLibertador = document.getElementById("btnLibertador");
+
+let btnBenavidez = document.getElementById("btnBenavidez");
+
+sectionLocales.className = "imglocal";
+
+botonNordelta.addEventListener("click", () => {
+    sectionLocales.innerHTML = `
+                              <img src="../assets/localnordelta.jpg" class="imagenlocal" alt="localnordelta ">
+                              <h5 class="letraLocales"> Teniente Cnel Magan 670, Nordelta <br> Contacto: +54 1142 03 7440 <br> de Miercoles a Domingo <br> 18hs hasta 24hs </h5>
+                              `
+});
+
+btnSanIsidro.addEventListener("click", () => {
+    sectionLocales.innerHTML = `
+                               <img src="../assets/localsanisidro.jpg" class="imagenlocal"  alt="localsanisidro">
+                               <h5 class="letraLocales"> E Echeverria 1365, San Isidro <br> Contacto: +54 2644 22 3777 <br> de Miercoles a Domingo <br> 18hs hasta 24hs </h5>
+                                `
 })
-if(localStorage){
-    let nombreDeUsuario = localStorage.getItem("nombreDeUsuario");
-    let domicilio = localStorage.getItem("domicilio");
-    let sexo = localStorage.getItem("sexo");
-    let edad = localStorage.getItem("edad");
-    cuentaDeUsuario.innerHTML =`
-                                <img src="../assets/imagendehombre.png" alt="hombre" class="imgUsuario"> 
-                                <h4> Nombre de usuario: ${nombreDeUsuario} </h4>
-                                <h4> Domicilio: ${domicilio} 
-                                <h4> Edad: ${edad} </h4>
-                                <h4> sexo: ${sexo} </h4> 
-                                `   
-}
-}
+
+btnVillaMayo.addEventListener("click", () => {
+    sectionLocales.innerHTML = `
+                               <img src="../assets/localvillamayo.jpg" class="imagenlocal"  alt="localvillamayo">
+                               <h5 class="letraLocales"> 4 De Enero 3135, Villa de Mayo <br> Contacto: +54 3424 53 4099 <br> de Miercoles a Domingo <br> 18hs hasta 24hs </h5>
+                                `
+})
+
+btnLibertador.addEventListener("click", () => {
+    sectionLocales.innerHTML = `
+                               <img src="../assets/locallibertador.webp"  class="imagenlocal" alt="locallibertador">
+                               <h5 class="letraLocales"> Rawson 72, Av. Libertador <br> Contacto: +54 3454 21 3246 <br> de Martes a Domingo <br> 15pm hasta 02am </h5>
+                                `
+})
+
+btnBenavidez.addEventListener("click", () => {
+    sectionLocales.innerHTML = `
+                               <img src="../assets/localbenavidez.jpg"  class="imagenlocal" alt="locallibertador">
+                               <h5 class="letraLocales"> Santa Fe 3651, Benavidez <br> Contacto: +54 2234 95 1774 <br> de Jueves a Domingo <br> 15hs hasta 24hs </h5>
+                                `
+})
+

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>Nuestros locales</title>
 </head>
 <body class="bodyy">
@@ -19,8 +20,8 @@
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="">Nuestras Cervezas</a></li>
-                    <li><a href="">Especialidades de <br> la Casa</a></li>
-                    <li><a href="">Reservas</a></li>
+                    <li><a href="">Especialidades de la Casa</a></li>
+                    <li><a href="../pages/reservas.html">Reservas</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,22 +30,24 @@
         <div class="locales_separador">
         <div class="elegir_local">
             <ul>
-                <li><a href="">Nordelta</a></li>
-                <li><a href="">San Isidro</a></li>
-                <li><a href="">Villa de Mayo</a></li>
-                <li><a href="">Av. Libertador</a></li>
-                <li><a href="">Benavidez</a></li>
+                <li><button id="btnNordelta">Nordelta</button></li>
+                <li><button id="btnSanIsidro">San Isidro</button></li>
+                <li><button id="btnVillaMayo">Villa de Mayo</button></li>
+                <li><button id="btnLibertador">Av. Libertador</button></li>
+                <li><button id="btnBenavidez">Benavidez</button></li>
             </ul>
         </div>
         <img src="../assets/separador.png" alt="seprador">
         </div>
+        <div id="sectionLocales"></div>
     </main>
 
     <footer class="footer_pages">
 
     </footer>
-
-    <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../index.js"></script>
 </body>
 </html>
+
