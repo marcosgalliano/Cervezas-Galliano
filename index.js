@@ -150,7 +150,7 @@ if (color === "1"){
 // })
 
 
-let sectionLocales = document.getElementById("sectionLocales");
+/* let sectionLocales = document.getElementById("sectionLocales");
 
 let botonNordelta = document.getElementById("btnNordelta");
 
@@ -197,5 +197,5 @@ btnBenavidez.addEventListener("click", () => {
                                <img src="../assets/localbenavidez.jpg"  class="imagenlocal" alt="locallibertador">
                                <h5 class="letraLocales"> Santa Fe 3651, Benavidez <br> Contacto: +54 2234 95 1774 <br> de Jueves a Domingo <br> 15hs hasta 24hs </h5>
                                 `
-})
+}) */
 

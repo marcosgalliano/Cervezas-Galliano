@@ -4,63 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../styles/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <script src="https://kit.fontawesome.com/7b01bfd5ea.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.0/dist/sweetalert2.all.min.js"></script>
     <title>Reservas</title>
 </head>
-<body>
-    <main>
-        <div class="body_div">
-            <img src="../assets/logo.png" class="logo_reservas">
+<body class="body_reservaPage">
+    <header class="header_pages">
+        <div class="navbar2">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="">Nuestras Cervezas</a></li>
+                    <li><a href="">Especialidades de la Casa</a></li>
+                    <li><a href="../pages/nuestroslocales.html">Nuestros Locales</a></li>
+                    <li id="usuario__navbar"></li>
+                </ul>
+            </nav>
         </div>
-        <!-- RESERVA CODE -->
-        <button id="boton">Crear Usuario</button>
-        <h3 id="h2"></h3>
-        <div id="cuentaDeUsuario"></div>
-         <section class="reserva">
-             <div class="reservaBstrap">
-             <form>
-                 <label for="nombre">
-                     Nombre
-                 </label>
-                 <input type="text" id="nombre" />
-                 <br class="reserva_br768">
-                     Apellido
-                 </label>
-                 <input type="text" id="apellido" />
-                 <h3> Elegir Local </h3>
-                 <select>
-                     <option selected="selected"> LOCAL </option>
-                     <option> Puerto de Frutos </option>
-                     <option> Euskal Herria Plaza</option>
-                 </select>
-                <h3>
-                    Cantidad de Personas
-                </h3>
-                <select>
-                    <option> 1 Personas </option>
-                    <option> 2 Personas </option>
-                    <option> 3 Personas </option>
-                    <option> 4 Personas </option>
-                    <option> +5 Personas </option>
-                </select>
-                <label for="Fecha"> Dia de la Reserva </label>
-                <br />
-                <input type="datetime-local" id="Fecha de reserva" name="Elegir fecha" value="17-05-22T00:00" min="17-05-22T10:00" max="01-01-23T23:59" >
-                <label> 
-                    Queres que te enviemos un recordatorio para la Reserva?
-                </label>
-                <br />
-                <span> SI </span>
-                 <input type="radio"  name="SINO" />
-                <span> NO </span>
-                 <input type="radio" name="SINO" />
-                <br />
-                 <input type="submit" />
-             </form>
-             </div>
-         </section>
+    </header>
+    <main class="main_reservas"> 
+        <section class="section_reserva">
+                <h2 class="h2">
+                    Reserva para Visitar Nuestra Fabrica
+                </h2>
+            <div class="tarjeta_de_reserva">
+                <img src="../assets/trago_exotico.jpg" alt="imagen de tragos" class="img_reserva">
+                <div class="formulario">
+                    <h3 class="titulo_formulario">
+                        Ingrese sus Datos
+                    </h3>
+                    <form id="form"   action="https://formspree.io/f/xrgdyzjb"
+                    method="POST">
+                    <div class="nombre_div">
+                        <label for="nombre">
+                            Nombre y Apellido:
+                        </label>
+                        <input type="text" id="nombre" placeholder="Nombre y Apellido"/>
+                    </div>
+                    <div class="fecha_div">    
+                        <label for="fecha">
+                            Ingrese la fecha de su Visita:
+                        </label>
+                        <input type="datetime-local" id="Fecha_de_reserva" name="Elegir fecha" value="17-05-22T00:00" min="17-05-22T10:00" max="01-01-23T23:59" >
+                    </div>
+                    <div class="correo_div">
+                        <label for="correo">
+                            Ingrese Su Correo:
+                        </label>
+                        <input type="email" id="correo" placeholder="Correo Electronico" name="email">
+                    </div>
+                    <div class="observaciones_div">
+                        <label for="texto">Observaciones</label>
+                        <textarea name="mensaje" id="observaciones" placeholder="Escriba una Observacion"></textarea>
+                    </div>
+                    <div class="boton_submit_div">
+                    <button type='submit' id="boton_submit" onclick="mostrar_inputs()">Enviar Reserva</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div id="carta_reserva">
+
+            </div>
+        </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="../reserva.js"></script>
 </body>

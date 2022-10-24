@@ -1,0 +1,50 @@
+.footer_pages{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "aviso titulo redes";
+}
+
+.h1_footer{
+    grid-area: titulo;
+    margin-top: 7px;
+    font-family: 'Righteous', cursive;
+    color: #e3792c;
+    font-size: 60px;
+}
+
+.seccion_redesFooter{
+    grid-area: redes;
+}
+
+.instagramFooter{
+    margin: 7px;
+}
+
+.instagramFooter a{
+    color: rgb(246, 73, 133);;
+}
+
+.twitterFooter{
+    margin: 7px;
+}
+
+.facebookFooter{
+    margin: 7px;
+}
+
+.h3_footer{ 
+    grid-area: aviso;
+    font-size: 14px;
+    color: white;
+    font-family: 'Righteous', cursive;
+    margin-top: 10px;
+}
+
+.footer_pages{
+    grid-area: footer;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+}

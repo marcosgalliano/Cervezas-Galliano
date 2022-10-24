@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.body_reservaPage{
+    background-image: url(../assets/foto_desenfocada_page-0001.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header_pages{
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar2 ul{
+    list-style: none;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+}
+
+.navbar2{
+    height: 100%;
+}
+
+.navbar2 nav{
+    height: 100%;
+}
+
+.navbar2 ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous', cursive;
+    transition: 1s;
+    padding: 3px;
+}
+
+.navbar2 ul li a:hover{
+    color: rgb(255, 184, 97);
+    font-size: 17px;
+    padding: 10px;
+}
+
+.imagenUsuario{
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#usuario__navbar{
+    display: flex;
+}
+
+.pUsuarioNav{
+    margin-top: 15px;
+    margin-right: 15px;
+    font-family: 'Righteous', cursive; 
+    color: white;
+}
+
+
+/* RESERVA */
+
+.main_reservas{
+    display: flex;
+    justify-content: center;
+}
+
+.section_reserva{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.h2{
+    color: white;
+    font-family: 'Righteous', cursive;
+    align-self: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.tarjeta_de_reserva{
+    width: 850px;
+    height: 300px;
+    background-color: white;
+    display: grid;
+    grid-template-areas: 
+    "foto formulario";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    box-shadow: 50px 50px 50px black;
+}
+
+.img_reserva{
+    grid-area: foto;
+    width: 100%;
+    height: 100%;
+}
+
+/* FORMULARIO */
+
+.formulario{
+    grid-area: formulario;
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "form form"
+    "form form"
+    "form form";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 30% 30% 20%;
+}
+
+.titulo_formulario{
+    grid-area: titulo;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+}
+
+#form{
+    grid-area: form;
+    display: grid;
+    grid-template-areas: 
+    "nombre fecha"
+    "correo observaciones"
+    "boton boton";
+}
+
+.nombre_div{
+    grid-area: nombre;
+    text-align: center;
+}
+
+.fecha_div{
+    grid-area: fecha;
+    text-align: center;
+}
+
+.correo_div{
+    grid-area: correo;
+    text-align: center;
+}
+
+.observaciones_div{
+    grid-area: observaciones;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#observaciones{
+    padding-right: 4px;
+}
+
+.section_reserva .tarjeta_de_reserva .formulario #form label{
+    font-family: 'Kanit', sans-serif;
+}
+
+.boton_submit_div{
+    grid-area: boton;
+}
+
+#boton_submit{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: #ff9203;
+    transition: 1s;
+    font-family: 'Kanit', sans-serif;
+}
+
+#boton_submit:hover{
+    background: #07ff02;
+}
+
+#carta_reserva{
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+#carta_reserva p{
+    font-family: 'Kanit', sans-serif;
+}
+
+#carta_reserva img{
+    height: 70%;
+}
+
+#carta_reserva h5{
+    font-family: 'Righteous', cursive;
+}

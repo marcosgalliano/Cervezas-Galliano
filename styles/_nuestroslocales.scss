@@ -5,7 +5,7 @@
     "main main"
     "footer footer";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 600px 100px;
+    grid-template-rows: 10% 90% 10%;
 }
 
 // HEADER
@@ -76,6 +76,10 @@
     margin-top: 30px;
 }
 
+.separador{
+    width: 100%;
+}
+
 .elegir_local ul{
     list-style: none;
     display: flex;
@@ -86,23 +90,23 @@
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-family: 'Righteous', cursive;
+    transition: 1s;
+}
+
+.elegir_local ul li a:hover{
+    color: #757575;
+    font-size: 18px;
 }
 
 .elegir_local{
     margin-right: 300px;
 }
 
-
-
-// FOOTER
-.footer_pages{
-    grid-area: footer;
-    background-color: rgb(0, 0, 0);
-    height: 100%;
-    width: 100%;
+.publicidad{
+    width: 70%;
+    height: 250px;
+    margin-top: 70px;
 }
-
-
 
 // JS
 
@@ -132,63 +136,4 @@
 }
 
 
-// BOTONES
-#btnNordelta{
-    border: none;
-    font-family: 'Righteous', cursive;
-    background: none;
-    transition: 1s;
-}
 
-#btnSanIsidro{
-    border: none;
-    font-family: 'Righteous', cursive;
-    background: none;
-    transition: 1s;
-}
-
-#btnVillaMayo{
-    border: none;
-    font-family: 'Righteous', cursive;
-    background: none;
-    transition: 1s;
-}
-
-#btnBenavidez{
-    border: none;
-    font-family: 'Righteous', cursive;
-    background: none;
-    transition: 1s;
-}
-
-#btnBenavidez:hover{
-    border-top: 1px solid rgb(0, 0, 0);
-    padding-top: 10px;
-}
-
-#btnLibertador{
-    border: none;
-    font-family: 'Righteous', cursive;
-    background: none;
-    transition: 1s;
-}
-
-#btnLibertador:hover{
-    border-top: 1px solid rgb(0, 0, 0);
-    padding-top: 10px;
-}
-
-#btnVillaMayo:hover{
-    border-top: 1px solid rgb(0, 0, 0);
-    padding-top: 10px;
-}
-
-#btnSanIsidro:hover{
-    border-top: 1px solid rgb(0, 0, 0);
-    padding-top: 10px;
-}
-
-#btnNordelta:hover{
-    border-top: 1px solid rgb(0, 0, 0);
-    padding-top: 10px;
-}
