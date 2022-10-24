@@ -257,7 +257,7 @@ localStorage.setItem("correo", correo);
 }
 
 
-if (localStorage){
+if (localStorage.nombreUsuario){
   let nombreUsuario = localStorage.getItem("nombreUsuario");
   let Fecha_de_reserva = localStorage.getItem("Fecha_de_reserva");
   let observaciones = localStorage.getItem("observaciones");
