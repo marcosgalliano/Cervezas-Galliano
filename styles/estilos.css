@@ -283,8 +283,6 @@
   text-decoration: none;
   color: white;
   font-family: "Righteous", cursive;
-  border-right: 1px solid white;
-  border-left: 1px solid white;
   transition: 1s;
   padding: 3px;
 }
@@ -445,4 +443,8 @@ form input {
 .imgUsuario {
   height: 70px;
   width: 70px;
+}
+
+.bodyEspecialidades {
+  align-items: center;
 }/*# sourceMappingURL=estilos.css.map */
