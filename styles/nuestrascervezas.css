@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(52, 52, 52);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+.header_pages{
+    grid-area: nav;
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar2 ul{
+    list-style: none;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+}
+
+.navbar2{
+    height: 100%;
+}
+
+.navbar2 nav{
+    height: 100%;
+}
+
+.navbar2 ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Righteous', cursive;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    transition: 1s;
+    padding: 3px;
+}
+
+.navbar2 ul li a:hover{
+    color: rgb(255, 184, 97);
+    font-size: 17px;
+    padding: 10px;
+}
+
+/* FOOTER */
+
+.footer_pages{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "aviso titulo redes";
+}
+
+.h1_footer{
+    grid-area: titulo;
+    margin-top: 7px;
+    font-family: 'Righteous', cursive;
+    color: #e3792c;
+    font-size: 60px;
+}
+
+.seccion_redesFooter{
+    grid-area: redes;
+}
+
+.instagramFooter{
+    margin: 7px;
+}
+
+.instagramFooter a{
+    color: rgb(246, 73, 133);;
+}
+
+.twitterFooter{
+    margin: 7px;
+}
+
+.facebookFooter{
+    margin: 7px;
+}
+
+.h3_footer{ 
+    grid-area: aviso;
+    font-size: 14px;
+    color: white;
+    font-family: 'Righteous', cursive;
+    margin-top: 10px;
+}
+
+.footer_pages{
+    grid-area: footer;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+}
+
+/* CSS */
+img {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+h1 {
+    color: royalblue;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+}
+#boton-carrito {
+    border: none;
+    color: royalblue;
+    font-size: 40px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+#boton-carrito:hover {
+    cursor: pointer;
+    color: white;
+    background-color: royalblue;
+}
+#boton-carrito:focus {
+    outline: none;
+}
+
+#contenedor-productos {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+p {
+    line-height: 1.8;
+}
+.producto {
+    max-width: 20%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+    background-color: #8e8e8e;
+}
+.precioProducto {
+    font-weight: 700;
+}
+.boton-agregar {
+    background-color: rgb(51, 52, 51);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+    border: none;
+}
+.boton-agregar:hover {
+    cursor: pointer;
+}
+.boton-agregar:focus {
+    outline: none;
+}
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: royalblue;
+    padding-bottom: 5px;
+}
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: royalblue;
+    border: none;
+    background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+.modal-carrito .precioProducto {
+    padding-top: 10px;
+    
+}
+
+.productoEnCarrito {
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productoEnCarrito:hover {
+    border-left: 5px solid royalblue;
+}
+
+.boton-eliminar {
+    background-color: white;
+    color: red;
+    border: none;
+    font-size: 20px;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+.boton-eliminar:focus {
+    outline: none;
+}

@@ -1,0 +1,26 @@
+[
+    {"id":"1", "nombre":"Cerveza Reina", "tipo":"Cervezas Abadia", "cantidad":"1", "precio":"450", "descripcion":"Una cerveza de color bronceado con una espuma ligeramente tostada y con mucha persistencia.", "img":"../assets/cerveza_nro1.jpg"
+    },
+    {"id":"2", "nombre":"Galliakos", "tipo":"Cervezas Lager", "cantidad":"1", "precio":"500", "descripcion":"Las Lager son las cervezas más populares en Europa occidental;<br> normalmente son cervezas claras, para servirse frías con una alta drinkability.", "img":"../assets/cerveza_nro2.jpg"
+    },
+    {"id":"3", "nombre":"Celen", "tipo":"Lager Especial", "cantidad":"1", "precio":"250", "descripcion":"Las especial son también cervezas rubias, doradas como las pilsen <br> pero con reflejos más ámbar. Tienen aromas malteados <br> ligeramente tostados con notas a lúpulo.", "img":"../assets/cerveza_nro3.webp"
+    },
+    {"id":"4", "nombre":"Akosna", "tipo":"Cervezas Lager", "cantidad":"1", "precio":"680", "descripcion":"Las Lager son las cervezas más populares en Europa occidental;<br> normalmente son cervezas claras, para servirse frías con una alta drinkability.", "img":"../assets/cerveza_nro4.webp"
+    },
+    {"id":"5", "nombre":"Avego", "tipo":"Cervezas negras", "cantidad":"1", "precio":"890", "descripcion":"Cervezas Stout: Cervezas muy oscuras hechas con malta tostada.", "img":"../assets/cervezanegra1.jpg"
+    },
+    {"id":"6", "nombre":"Ipago", "tipo":"Cervezas Lager", "cantidad":"1", "precio":"350", "descripcion":"Las Lager son las cervezas más populares en Europa occidental;<br> normalmente son cervezas claras, para servirse frías con una alta drinkability.", "img":"../assets/cerveza_nro5.jpg"
+    },
+    {"id":"7", "nombre":"Ipaapa", "tipo":"Cervezas negras", "cantidad":"1", "precio":"430", "descripcion":"Cervezas Porter: Una variedad aun más fuerte. Suelen ser muy cremosas y pueden tener matices a chocolate o café.", "img":"../assets/cervezanegra2.jpg"
+    },
+    {"id":"8", "nombre":"27a", "tipo":"Lager Especial", "cantidad":"1", "precio":"270", "descripcion":"Las especial son también cervezas rubias, doradas como las pilsen <br> pero con reflejos más ámbar. Tienen aromas malteados <br> ligeramente tostados con notas a lúpulo.", "img":"../assets/cerveza_nro6.jpg"
+    },
+    {"id":"9", "nombre":"Osdar", "tipo":"Cervezas Lager", "cantidad":"1", "precio":"410", "descripcion":"Las Lager son las cervezas más populares en Europa occidental;<br> normalmente son cervezas claras, para servirse frías con una alta drinkability.", "img":"../assets/cerveza_nro7.jpg"
+    },
+    {"id":"10", "nombre":"Eos23", "tipo":"Cervezas negras", "cantidad":"1", "precio":"420", "descripcion":"Cervezas Stout: Cervezas muy oscuras hechas con malta tostada.", "img":"../assets/cervezanegra3.jpg"
+    },
+    {"id":"11", "nombre":"Armo", "tipo":"Cervezas Lager", "cantidad":"1", "precio":"770", "descripcion":"Las Lager son las cervezas más populares en Europa occidental;<br> normalmente son cervezas claras, para servirse frías con una alta drinkability.", "img":"../assets/cerveza_nro8.jpg"
+    },
+    {"id":"12", "nombre":"Ciento10", "tipo":"Lager Especial", "cantidad":"1", "precio":"610", "descripcion":"Las especial son también cervezas rubias, doradas como las pilsen <br> pero con reflejos más ámbar. Tienen aromas malteados <br> ligeramente tostados con notas a lúpulo.", "img":"../assets/cerveza_nro9.jpg"
+    }
+]
