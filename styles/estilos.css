@@ -447,6 +447,41 @@
   background-color: rgb(253, 197, 141);
 }
 
+@media screen and (max-width: 900px) {
+  .imglocal {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+    margin-top: 0;
+  }
+  .imagenlocal {
+    width: 85%;
+    grid-area: imagen;
+    height: 100%;
+  }
+  .letraLocales {
+    grid-area: texto;
+    height: 100%;
+    margin: 0;
+    width: 90%;
+    font-size: 100%;
+    height: 90%;
+  }
+  .imglocal {
+    height: 500px;
+  }
+  .elegir_local {
+    margin: 0;
+  }
+  .elegir_local ul {
+    padding: 0;
+  }
+  .publicidad {
+    width: 100%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -516,6 +551,34 @@ form input {
   width: 100%;
 }
 
+@media screen and (max-width: 900px) {
+  .footer_pages {
+    display: grid;
+    grid-template-areas: "titulo redes" "aviso aviso";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 60%;
+    height: 100%;
+  }
+  .h3_footer {
+    margin: 0;
+  }
+  .h3Footer {
+    grid-area: aviso;
+    display: flex;
+    justify-content: center;
+  }
+  .h1_footer {
+    grid-area: titulo;
+    font-size: 18px;
+    margin: 0;
+    align-self: center;
+  }
+  .seccion_redesFooter {
+    grid-area: redes;
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .imgUsuario {
   height: 70px;
   width: 70px;

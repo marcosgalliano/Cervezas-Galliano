@@ -133,5 +133,48 @@
     background-color:rgb(253, 197, 141);
 }
 
+//RESPONSIVE
 
+@media screen and (max-width:900px) {
+    .imglocal{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "texto";
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 40%;
+        margin-top: 0;
+    }
+
+    .imagenlocal{
+        width: 85%;
+        grid-area: imagen;
+        height: 100%;
+    }
+
+    .letraLocales{
+        grid-area: texto;
+        height: 100%;
+        margin: 0;
+        width: 90%;
+        font-size: 100%;
+        height: 90%;
+    }
+    .imglocal{
+        height: 500px;
+    }
+
+    .elegir_local{
+        margin: 0;
+    }
+
+    .elegir_local ul{
+        padding: 0;
+    }
+
+    .publicidad{
+        width: 100%;
+    }
+}
 

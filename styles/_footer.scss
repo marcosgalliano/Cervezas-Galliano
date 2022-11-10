@@ -48,3 +48,40 @@
     height: 100%;
     width: 100%;
 }
+
+//RESPONSIVE
+
+@media screen and (max-width:900px) {
+    .footer_pages{
+        display: grid;
+        grid-template-areas: 
+        "titulo redes"
+        "aviso aviso";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 40% 60%;
+        height: 100%;
+    }
+
+    .h3_footer{
+        margin: 0;
+    }
+
+    .h3Footer{
+        grid-area: aviso;
+        display: flex;
+        justify-content: center;
+    }
+
+    .h1_footer{
+        grid-area: titulo;
+        font-size: 18px;
+        margin: 0;
+        align-self: center;
+    }
+
+    .seccion_redesFooter{
+        grid-area: redes;
+        display: flex;
+        justify-content: space-around;
+    }
+}
