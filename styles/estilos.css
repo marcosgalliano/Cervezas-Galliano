@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.nuestras_cervezasLi2 {
+  display: none;
+}
+
 .img_logo {
   height: 100%;
   width: 100%;
@@ -244,6 +248,78 @@
   background-size: 105% 105%;
 }
 
+@media screen and (max-width: 900px) {
+  .body {
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-columns: 100%;
+    grid-template-rows: 265px 1500px;
+  }
+  .texto_header {
+    display: none;
+  }
+  .navbar nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nuestras_cervezasLi {
+    margin-top: 0;
+  }
+  .header_index {
+    grid-area: header;
+  }
+  .logo {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .img_logo {
+    width: 150px;
+  }
+  .navbar nav ul li {
+    margin-bottom: 0;
+  }
+  .navbar nav ul {
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  .nuestras_cervezasLi {
+    display: none;
+  }
+  .nuestras_cervezasLi2 {
+    display: block;
+  }
+  .instagram a {
+    font-size: 23px;
+  }
+  .twitter a {
+    font-size: 23px;
+  }
+  .facebook a {
+    font-size: 23px;
+  }
+  .main_index {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "nCervezas" "nLocales" "eCasa" "reservas";
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+  }
+  .div1 {
+    grid-area: nCervezas;
+  }
+  .div2 {
+    grid-area: nLocales;
+  }
+  .div3 {
+    grid-area: eCasa;
+  }
+  .div4 {
+    grid-area: reservas;
+  }
+}
 .bodyy {
   display: grid;
   grid-template-areas: "nav nav" "main main" "footer footer";
