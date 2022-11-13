@@ -16,6 +16,10 @@
     width: 100%;
 }
 
+.navbar3{
+    display: none;
+}
+
 .navbar2 ul{
     list-style: none;
     display: block;
@@ -136,6 +140,16 @@
 //RESPONSIVE
 
 @media screen and (max-width:900px) {
+
+    .bodyy{
+        display: grid;
+        grid-template-areas: 
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 90% 10%;
+    }
+
     .imglocal{
         width: 100%;
         display: grid;
@@ -166,7 +180,8 @@
     }
 
     .elegir_local{
-        margin: 0;
+       margin-top: 80px;
+       margin-right: 0;
     }
 
     .elegir_local ul{
@@ -175,6 +190,28 @@
 
     .publicidad{
         width: 100%;
+    }
+
+    .navbar3{
+        display: block;
+        font-family: 'Righteous', cursive;
+    }
+
+    .navbar2{
+        display: none;
+    }
+
+    .navbar-nav li a{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .elegir_local ul{
+        flex-wrap: wrap;
+    }
+
+    .elegir_local ul li{
+        padding: 15px;
     }
 }
 
